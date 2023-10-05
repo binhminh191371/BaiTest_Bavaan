@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài test của TrầN Bình Minh</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="info">
+      <div class="info_left">
+        <h2>Thông tin gửi</h2>
+        <form id="myForm">
+          <label for="phone">Số điện thoại:</label>
+          <input type="text" id="phone" name="phone" required />
+          <div id="phoneError" class="error"></div>
+
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" required />
+          <div id="emailError" class="error"></div>
+
+          <label for="city">Tỉnh / Thành phố:</label>
+          <select id="city" name="city" required>
+            <option value="">-- Chọn tỉnh / thành phố --</option>
+            <option value="hanoi">Hà Nội</option>
+            <option value="hochiminh">Hồ Chí Minh</option>
+            <option value="hagiang">Hà Giang</option>
+            <option value="danang">Đà Nẵng</option>
+            <option value="haiphong">Hải Phòng</option>
+            <option value="thanhhoa">Thanh Hoá</option>
+            <option value="nhatrang">Nha Trang</option>
+            <option value="binhduong">Bình Dương</option>
+            <option value="ninhbinh">Ninh Bình</option>
+            <option value="thaibinh">Thái Bình</option>
+            <option value="sonla">Sơn La</option>
+            <option value="camau">Cà Mau</option>
+          </select>
+
+          <label for="district">Quận / Huyện:</label>
+          <select id="district" name="district" required>
+            <option value="">-- Chọn quận / huyện --</option>
+          </select>
+          <div class="submitForm"><button type="submit">Submit</button></div>
+        </form>
+      </div>
+      <div class="info_right">
+        <h2>Thông tin đã gửi</h2>
+
+        <label for="displayPhone">Số điện thoại:</label>
+        <input type="text" id="displayPhone" readonly />
+
+        <label for="displayEmail">Email:</label>
+        <input type="text" id="displayEmail" readonly />
+
+        <label for="displayCity">Tỉnh / Thành phố:</label>
+        <input type="text" id="displayCity" readonly />
+
+        <label for="displayDistrict">Quận / Huyện:</label>
+        <input type="text" id="displayDistrict" readonly />
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
